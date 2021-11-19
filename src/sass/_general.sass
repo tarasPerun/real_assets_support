@@ -1,0 +1,315 @@
+.main
+    position: relative
+    display: flex
+    justify-content: space-between
+    min-height: 956px
+    background: url('../img/backgrounds/bg1.png') center (center / cover) no-repeat
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25))
+
+    .left_block
+        margin-top: 16px
+        margin-left: 80px
+
+    .right_block
+        width: 200px
+        height: 50px
+        position: absolute
+        display: flex
+        justify-content: space-between
+        align-items: center
+        top: 44px
+        right: 36px
+        img
+            transform: translateX(-139%)
+        .main_menu_text
+            color: #D6B46F
+            font-size: 18px
+            text-transform: uppercase
+        .ellipse
+            width: 53px
+            height: 53px
+            background: rgba(100, 100, 100, 0.01)
+            border: 5px solid #D6B46F
+            box-sizing: border-box
+            filter: blur(2px)
+            border-radius: 50%
+            z-index: 2
+.main_line
+
+    position: absolute
+    width: 92%
+    height: 0px
+    border: 1px solid #D6B46F
+    filter: blur(1px)
+    transform: rotate(0.13deg)
+    top: 105px
+    left: 70px
+
+.promo
+    .beige_rect
+        position: relative
+        min-height: 629px
+        background: rgba(214, 180, 111, 0.5)
+        padding: 24px 0 30px 0
+        // filter: blur(4px)
+    .herzlich
+        position: absolute
+        z-index: 1
+    .verfug
+        position: absolute
+        z-index: 2
+
+    .service
+        position: absolute
+        z-index: 3
+       
+    
+   
+
+.philosoph
+    display: flex
+    justify-content: space-between
+    .descr
+        // width: 1025px
+        width: 50%
+        min-height: 779px
+        margin-top: 62px
+        margin-left: 83px
+        color: #000000
+        z-index: 10
+        &_title
+            font-size: 50px
+        &_subtitle
+            font-size: 25px
+        &_text
+            font-size: 20px
+        &_image
+            // width: 764px
+            width: 45%
+            height: 732px
+            margin-top: 62px
+            margin-right: 73px
+            z-index: 9
+
+.philosoph_divider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 495px 0 411px
+    min-height: 200px
+    .small_line
+        width: 416px
+        height: 0px
+        border: 1px solid #D6B46F
+        filter: blur(2px)
+        transform: rotate(0.01deg)
+
+.weiterlesen
+    position: relative
+    &_container
+        display: flex
+        justify-content: space-between
+        min-height: 460px
+        padding: 0 70px 0 70px
+        color: #fff
+        text-align: center
+        &_item1
+            width: 30%
+            background: url(../img/wissen_dark.png) center (center / cover) no-repeat
+
+            &:hover
+                background: url(../img/wissen_light.png) center (center / cover) no-repeat
+                color: #000
+        &_item2
+            width: 30% 
+            background: url(../img/produkt_dark.png) center (center / cover) no-repeat
+            &:hover
+                background: url(../img/produkt_light.png) center (center / cover) no-repeat
+                color: #000
+        &_item3
+            width: 30%
+            padding-bottom: 52px
+            background: url(../img/ertrage_dark.png) center (center / cover) no-repeat
+            &:hover
+                background: url(../img/ertrage_light.png) center (center / cover) no-repeat
+                color: #000
+    &_subtitle
+        font-size: 24px
+        margin-top: 80px
+        text-align: left
+        margin-left: 30px
+    &_text
+        font-size: 18px
+        margin-left: 30px
+        margin-right: 30px
+        text-align: left
+        line-height: 23px
+    &_btn
+        position: absolute
+        display: block
+        margin: 0 auto
+        font-size: 25px
+        width: 200px
+        height: 60px
+        bottom: 30px
+        margin-left: 30px
+        border: 4px solid #D6B46F
+        color: #D6B46F
+        background-color: rgba(0,0,0,0)
+        &:hover
+            color: #000
+            background-color: #D6B46F
+            border: 4px solid #000
+
+
+
+.horizon_divider
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 200px
+    img
+        width: 6%
+    .small_line
+        width: 416px
+        height: 0px
+        border: 1px solid #D6B46F
+        filter: blur(2px)
+        transform: rotate(0.01deg)
+        margin: 50px
+
+.webinar 
+    &_descr
+        display: block
+        height: 580px
+        background: url('../img/backgrounds/bg2.png') center (center / cover) no-repeat
+        color: white
+        text-align: center
+        padding-top: 1px
+    &_title 
+        font-size: 50px
+        margin-top: 101px
+    &_subtitle 
+        font-size: 36px
+        margin-top: 46px
+    &_text 
+        font-size: 20px
+        margin-top: 50px
+    &_btn 
+        font-size: 25px
+        margin-top: 60px
+        width: 193px
+        height: 60px
+        background: #D6B46F
+
+
+
+.produkte
+    min-height: 800px
+    &_title
+        font-size: 50px
+        text-transform: uppercase 
+        text-align: center
+        margin-top: 113px
+    &_item 
+        padding: 45px 50px 35px 50px
+        display: flex
+        justify-content: space-between
+        text-align: center
+        &_1, &_2, &_3
+            width: 30%
+            img
+                width: 90%
+        .vert_line
+            display: block
+            width: 0px
+            height: 357px
+            border: 3px solid #D6B46F
+            background-color: #D6B46F
+            margin-top: 100px
+            margin-left: 30px
+    .text_block
+        text-align: center
+        width: 90%
+        margin-top: 10px
+        margin-left: 40px        
+        .subtitle 
+            font-size: 28px
+            line-height: 33px
+        .text 
+            font-size: 20px
+            margin-top: 10px
+            padding-right: 15px
+            line-height: 23px
+
+footer
+
+    position: relative
+    min-height: 281px
+    height: 100%
+    background: #000 
+.footer
+    z-index: 1
+    // padding-left: 94px
+    // padding-right: 32px
+    &_wrapper 
+        &_item 
+            display: flex
+            justify-content: space-between
+            color: white
+            text-align: left
+            padding-top: 50px
+            padding-right: 50px
+            &_1
+                margin-left: 50px
+                margin-top: 20px
+                width: 268px
+                img
+                    width: 100%
+            &_2
+                margin-left: 30px
+                color: white 
+                width: 350px
+                
+            &_3
+                color: white
+                width: 273px
+                margin-left: 25px
+            &_4
+                color: white
+                width: 205px
+                a
+                    color: white
+                    text-align: left
+                    &:hover
+                        color: red
+                .menu
+                    display: 
+                    margin-left: -40px
+                .menu_item
+                    list-style-type: none
+                    
+
+                // margin-left: -10px
+            &_5
+                width: 250px
+                margin-left: 30px
+                .social
+                    display: flex
+                    justify-content: space-between
+        .impressum
+            position: absolute
+            color: white
+            font-size: 25px
+            right: 52px
+            bottom: 81px
+            &:hover
+                color: red
+    &_subtitle
+        font-size: 25px
+    &_text
+        font-size: 18px
+        line-height: 29px
+
+    
+
