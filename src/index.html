@@ -29,21 +29,61 @@
         </div>
     </header>
 
-    <section class="promo">
-        <div class="beige_rect"> 
-           <div class="verfug">
-                <img src="img/backgrounds/verfug.png" alt="">
-            </div>       
-            
-        <div class="service">
-            <img src="img/backgrounds/service.png" alt="">
-        </div> 
- 
-        <div class="herzlich">
-            <img src="img/backgrounds/herzlich.png" alt="">
-        </div> 
+    <section class="slideshow">
 
-        </div>  
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+            <img src="img/backgrounds/verfug.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <img src="img/backgrounds/service.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <img src="img/backgrounds/herzlich.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </section>
+
+  <section class="slideshow_small">
+  <div class="slideshow-container_small">
+    <div class="mySlides_small">
+        <img src="img/backgrounds/verfug_small.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides_small">
+        <img src="img/backgrounds/service_small.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides_small">
+        <img src="img/backgrounds/herzlich_small.png" style="width:100%">
+    </div>
+
+
+    <a class="prev_small" onclick="plusSlides_small(-1)">&#10094;</a>
+    <a class="next_small" onclick="plusSlides_small(1)">&#10095;</a>
+</div>
+<br>
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot_small" onclick="currentSlide_small(1)"></span>
+<span class="dot_small" onclick="currentSlide_small(2)"></span>
+<span class="dot_small" onclick="currentSlide_small(3)"></span>
+</div>
+     
     </section>
 
     <section class="philosoph">
@@ -208,6 +248,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scrypt.js"></script>
 
 </body>
 </html>
