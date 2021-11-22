@@ -239,66 +239,68 @@
             text-align: left
             width: 55%
 
-.footer
-    &_wrapper 
-        &_item 
-            padding: 30px 20px
-            flex-direction: column
-            &_1
-                margin: 0 auto
-                // width: 268px
-                img
-                    width: 80%
-            &_2
-                // margin-left: 20px
-                width: 100%
-                
-            &_3
-                width: 100%
-            &_4
-                color: white
-                width: 80%
-                margin-left: 20px
-                
-                a
-                    color: white
-                    text-decoration: none
-                    &:hover
-                        color: red
-            &_5
-                width: 250px
-                margin-left: 30px
-                padding-top: 30px
-                padding-bottom: 20px
-                display: block
-                margin: 0 auto
-                .social
-                    display: flex
+    .footer
+        &_wrapper 
+            &_item 
+                padding: 30px 20px
+                flex-direction: column
+                &_1
+                    margin: 0 auto
+                    // width: 268px
+                    img
+                        width: 80%
+                &_2
+                    // margin-left: 20px
+                    width: 100%
                     
-                    justify-content: space-between
-    &_menu
-        list-style-type: none
-        display: flex
-        justify-content: space-between
-        flex-direction: row
-        &_link
-            margin-left: -40px
-            font-size: 14px
-            line-height: 20px
+                &_3
+                    width: 100%
+                &_4
+                    color: white
+                    width: 80%
+                    margin-left: 20px
+                    
+                    a
+                        color: white
+                        text-decoration: none
+                        &:hover
+                            color: red
+                &_5
+                    width: 250px
+                    margin-left: 30px
+                    padding-top: 30px
+                    padding-bottom: 20px
+                    display: block
+                    margin: 0 auto
+                    margin-top: -10px
+                    .social
+                        display: flex
+                        
+                        justify-content: space-between
+        &_menu
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            flex-direction: row
+            &_link
+                margin-left: -40px
+                font-size: 14px
+                line-height: 20px
 
 
-    &_subtitle
-        font-size: 20px
-    &_text
-        font-size: 16px
-        line-height: 19px
-
-            
-            
+        &_subtitle
+            font-size: 20px
+        &_text
+            font-size: 16px
+            line-height: 19px
 .impressum
-    font-size: 20px            
+    font-size: 20px 
+    bottom: 20px 
+    left: 50%          
+    transform: translateX(-10%)
 
 @media (max-width: 767px)
+
     header
     .header
         &_container
@@ -491,6 +493,48 @@
                 width: 80%
                 margin-top: 20px
                 margin-left: -100px
+
+    .footer
+        &_wrapper 
+            &_item 
+                text-align: center
+                &_1
+                    margin: 0 auto
+                &_2
+                    margin: 0
+                    
+                &_3
+                   margin: 0 
+                &_4
+                    margin: 0
+                    width: 100%
+                    text-align: center
+                    font-size: 20px
+                &_5
+                    display: block
+                    margin: 0 auto
+                    margin-top: -10px
+                   
+        &_menu
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            &_link
+                margin-left: -40px
+                font-size: 13px
+                line-height: 20px
+                text-align: center
+
+
+        &_subtitle
+            font-size: 24px
+        &_text
+            font-size: 16px
+            line-height: 19px
+.impressum
+    font-size: 18px 
+    bottom: 20px 
+              
             
 @media (max-width: 575px)
 
