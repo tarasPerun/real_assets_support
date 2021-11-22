@@ -1,41 +1,41 @@
 header
 .header
     &_container
-       
+        position: relative
         min-height: 956px
+        padding-right: 110px
         background: url('../img/backgrounds/bg1.png') center (center / cover) no-repeat
         filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25))
         .navbar
+            // position: fixed
             display: flex
             justify-content: space-between
             align-items: center
-
             .left_block
-                margin-top: 16px
+                margin-top: 8px
                 margin-left: 80px
 
             .menu
-                width: 600px
+                width: 800px
                 height: 50px
-                &_block
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
-                    // padding: 13px 70px
-                    // margin-left: 300px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                
                 &_item
                     list-style-type: none
 
                 &_link
-                    font-size: 16px
-                    color: rgb(255, 255, 255)
-                    font-weight: 300
+                    font-size: 18px
+                    color: #D6B46F
                     text-decoration: none
                     &:hover
                         text-decoration: none
-                        color: blue  
+                        color: white 
+            .hamburger
+                display: none
 
-            .right_block
+            /** .right_block
                 width: 120px
                 // height: 50px
                 display: flex
@@ -59,30 +59,29 @@ header
                     z-index: 2
                     margin-right: -3px
 
-                .hamburger
-                    display: block
-                    position: absolute
-                    right: 80px
-                    top: 50px
-                    transform: translateY(-50%)
-                    width: 26px
-                    height: 12px
-                    span
-                        display: block
-                        height: 2px
-                        width: 100%
-                        background-color: #fff
-                        margin-bottom: 4px
-                        transition: 0.5s all
-                    &_active
-                        span
-                            margin-bottom: -2px
-                            &:nth-child(1)
-                                transform:  translateY(3px) rotate(-45deg)
-                            &:nth-child(2)
-                                display: none
-                            &:nth-child(3)
-                                transform: translateY(3px) rotate(45deg)
+                    // .hamburger
+                    // display: block
+                    // right: 80px
+                    // top: 50px
+                    // transform: translateY(-50%)
+                    // width: 26px
+                    // height: 12px
+                    // span
+                    //     display: block
+                    //     height: 2px
+                    //     width: 100%
+                    //     background-color: #fff
+                    //     margin-bottom: 4px
+                    //     transition: 0.5s all
+                    // &_active
+                    //     span
+                    //         margin-bottom: -2px
+                    //         &:nth-child(1)
+                    //             transform:  translateY(3px) rotate(-45deg)
+                    //         &:nth-child(2)
+                    //             display: none
+                    //         &:nth-child(3)
+                    //             transform: translateY(3px) rotate(45deg) 
 .main_line
     position: absolute
     width: 92%
@@ -91,7 +90,7 @@ header
     filter: blur(1px)
     transform: rotate(0.13deg)
     top: 105px
-    left: 70px
+    left: 60px
 
 .slideshow
     .slideshow-container 
