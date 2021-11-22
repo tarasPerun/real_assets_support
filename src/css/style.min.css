@@ -14,7 +14,6 @@
   position: relative;
   min-height: 956px;
   padding-right: 110px;
-  background: url("../img/backgrounds/bg1.png") center center/cover no-repeat;
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25)); }
   .header_container .navbar {
@@ -57,6 +56,7 @@
       display: none; }
 
 .main_line {
+  display: block;
   position: absolute;
   width: 92%;
   height: 0px;
@@ -798,6 +798,12 @@ footer {
         .header_container .navbar .hamburger_active span:nth-child(3) {
           -webkit-transform: translateY(3px) rotate(45deg);
                   transform: translateY(3px) rotate(45deg); }
+  .header .main_line {
+    display: none; }
+  .xs-hidden {
+    display: none; }
+  .xs-visible {
+    display: block; }
   .main_line {
     display: none;
     width: 91%;
