@@ -1,24 +1,22 @@
 @media (max-width: 1200px)
-    .main
-        .left_block
-            margin-top: 36px
-            margin-left: 80px
-            img
-                width: 70%
-        .right_block
-       
-            top: 44px
-            right: 36px
-            img
-                transform: translateX(-139%)
-            .main_menu_text
-                font-size: 17px
-            .ellipse
-                width: 53px
-                height: 53px
-                border: 4px solid #D6B46F
-                filter: blur(2px)
-                z-index: 2
+    header
+    .header
+        &_container
+            padding-right: 50px
+            .navbar
+                .left_block
+                    margin-top: 12px
+                    margin-left: 60px
+                    img
+                        width: 85%
+                .menu
+                    width: 700px
+                    &_link
+                        font-size: 16px
+    .main_line
+        width: 93%
+        top: 100px
+        left: 40px
 
     .philosoph
         .descr
@@ -95,6 +93,29 @@
                 line-height: 20px
 
 @media (max-width: 991px)
+    header
+    .header
+        &_container
+            padding-right: 50px
+            padding-top: 10px
+            .navbar
+                .left_block
+                    width: 250px
+                    margin-top: 11px
+                    margin-left: 40px
+                    img
+                        width: 85%
+                .menu
+                    width: 800px
+                    margin-left: -50px
+
+                    &_link
+                        font-size: 15px
+    .main_line
+        width: 91%
+        top: 95px
+        left: 35px
+        filter: none
     .weiterlesen
         &_container
             padding: 0 20px 0 20px
@@ -165,6 +186,79 @@
             width: 55%
 
 @media (max-width: 767px)
+    header
+    .header
+        &_container
+            padding-right: 50px
+            padding-top: 10px
+            .navbar
+                // position: fixed
+                .left_block
+                    width: 250px
+                    margin-top: 11px
+                    margin-left: 40px
+                    img
+                        width: 85%
+                .menu
+                    position: absolute
+                    top: 0
+                    left: -100%
+                    width: 60%
+                    height: 400px
+                    // padding: 20px 15px
+                    background-color: rgba(0,0,0,.8)
+                    transition: 0.6s all
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    margin-top: -20px
+                
+
+                    &_block
+                        position: flex
+                        
+                    &_active
+                        left: 0%
+                    &_item
+                        padding-right: 0
+                        border: none
+                        margin: 10px
+                    &_link
+                        font-size: 20px
+                .hamburger
+                    display: block
+                    position: absolute
+                    right: 10px
+                    top: 30px
+                    transform: translateY(-50%)
+                    width: 26px
+                    height: 12px
+                    span
+                        display: block
+                        height: 2px
+                        width: 100%
+                        background-color: #fff
+                        margin-bottom: 5px
+                        transition: 0.5s all
+                    &_active
+                        span
+                            margin-bottom: -2px
+                            &:nth-child(1)
+                                transform:  translateY(3px) rotate(-45deg)
+                            &:nth-child(2)
+                                display: none
+                            &:nth-child(3)
+                                transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+   
+    .main_line
+        width: 91%
+        top: 95px
+        left: 35px
+        filter: none
     .philosoph
         display: flex
         justify-content: center
