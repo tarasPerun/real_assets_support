@@ -354,13 +354,9 @@ header
 footer
 
     position: relative
-    min-height: 281px
-    height: 100%
-    background: #000 
+    min-height: 250px
+    background: black 
 .footer
-    z-index: 1
-    // padding-left: 94px
-    // padding-right: 32px
     &_wrapper 
         &_item 
             display: flex
@@ -376,8 +372,8 @@ footer
                 img
                     width: 100%
             &_2
-                margin-left: 30px
-                color: white 
+                margin-left: 40px
+                color: white
                 width: 350px
                 
             &_3
@@ -386,39 +382,49 @@ footer
                 margin-left: 25px
             &_4
                 color: white
-                width: 205px
+                width: 250px
+                text-align: left
+                margin-left: 25px
                 a
                     color: white
                     text-align: left
+                    text-decoration: none
                     &:hover
                         color: red
-    &_menu
-        display: block
-        margin-left: -40px
-        &_item
-            list-style-type: none
-                    
-
-                // margin-left: -10px
             &_5
                 width: 250px
                 margin-left: 30px
+                padding-top: 30px
+                padding-bottom: 20px
                 .social
                     display: flex
                     justify-content: space-between
-        .impressum
-            position: absolute
-            color: white
-            font-size: 25px
-            right: 52px
-            bottom: 81px
-            &:hover
-                color: red
-    &_subtitle
-        font-size: 25px
-    &_text
-        font-size: 18px
-        line-height: 29px
+                    img
+                        width: 80%
+    &_menu
+        list-style-type: none
+        &_link
+            margin-left: -35px
 
+
+    &_subtitle
+        font-size: 20px
+    &_text
+        font-size: 16px
+        line-height: 20px
+
+            
+            
+.impressum
+    position: absolute
+    color: white
+    font-size: 25px
+    right: 52px
+    bottom: 81px
+    text-decoration: none
+    &:hover
+        color: red
+
+   
     
 

@@ -92,6 +92,60 @@
                 margin-top: 10px
                 line-height: 20px
 
+.footer
+    &_wrapper 
+        &_item 
+            padding: 30px 20px
+            &_1
+                margin: 0
+                width: 268px
+                img
+                    width: 100%
+            &_2
+                margin-left: 20px
+                color: white
+                width: 350px
+                
+            &_3
+                color: white
+                width: 273px
+                margin-left: 20px
+            &_4
+                color: white
+                width: 250px
+                margin-left: 20px
+                a
+                    color: white
+                    text-decoration: none
+                    &:hover
+                        color: red
+            &_5
+                width: 250px
+                margin-left: 30px
+                padding-top: 30px
+                padding-bottom: 20px
+                .social
+                    display: flex
+                    justify-content: space-between
+    &_menu
+        list-style-type: none
+        &_link
+            margin-left: -40px
+            font-size: 14px
+            line-height: 20px
+
+
+    &_subtitle
+        font-size: 17px
+    &_text
+        font-size: 14px
+        line-height: 19px
+
+            
+            
+.impressum
+    font-size: 20px
+
 @media (max-width: 991px)
     header
     .header
@@ -185,6 +239,65 @@
             text-align: left
             width: 55%
 
+.footer
+    &_wrapper 
+        &_item 
+            padding: 30px 20px
+            flex-direction: column
+            &_1
+                margin: 0 auto
+                // width: 268px
+                img
+                    width: 80%
+            &_2
+                // margin-left: 20px
+                width: 100%
+                
+            &_3
+                width: 100%
+            &_4
+                color: white
+                width: 80%
+                margin-left: 20px
+                
+                a
+                    color: white
+                    text-decoration: none
+                    &:hover
+                        color: red
+            &_5
+                width: 250px
+                margin-left: 30px
+                padding-top: 30px
+                padding-bottom: 20px
+                display: block
+                margin: 0 auto
+                .social
+                    display: flex
+                    
+                    justify-content: space-between
+    &_menu
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        &_link
+            margin-left: -40px
+            font-size: 14px
+            line-height: 20px
+
+
+    &_subtitle
+        font-size: 20px
+    &_text
+        font-size: 16px
+        line-height: 19px
+
+            
+            
+.impressum
+    font-size: 20px            
+
 @media (max-width: 767px)
     header
     .header
@@ -228,8 +341,8 @@
                 .hamburger
                     display: block
                     position: absolute
-                    right: 10px
-                    top: 30px
+                    right: 50px
+                    top: 50px
                     transform: translateY(-50%)
                     width: 26px
                     height: 12px
@@ -249,16 +362,19 @@
                                 display: none
                             &:nth-child(3)
                                 transform: translateY(3px) rotate(45deg)
-    .xs-hidden
-        display: none
-    .xs-visible
-        display: block
-   
+       
     .main_line
+        display: none
         width: 91%
         top: 95px
         left: 35px
         filter: none
+
+    .slideshow
+        display: none
+    .slideshow_small
+        display: block
+
     .philosoph
         display: flex
         justify-content: center
@@ -370,11 +486,50 @@
                 margin-left: -100px
             
 @media (max-width: 575px)
-    .slideshow
-        display: none
 
-    .slideshow_small
-        display: block
+    header
+    .header
+        &_container
+            .navbar
+                .left_block
+                    margin-top: 0
+                    margin-left: 30px
+                    img
+                        width: 60%
+                .menu
+                    width: 80%
+                    &_link
+                        font-size: 16px
+                .hamburger
+                    display: block
+                    position: absolute
+                    right: 40px
+                    top: 30px
+                    transform: translateY(-50%)
+                    width: 26px
+                    height: 12px
+                    span
+                        display: block
+                        height: 2px
+                        width: 100%
+                        background-color: #fff
+                        margin-bottom: 5px
+                        transition: 0.5s all
+                    &_active
+                        span
+                            margin-bottom: -2px
+                            &:nth-child(1)
+                                transform:  translateY(3px) rotate(-45deg)
+                            &:nth-child(2)
+                                display: none
+                            &:nth-child(3)
+                                transform: translateY(3px) rotate(45deg)
+    
+    // .slideshow
+    //     display: none
+
+    // .slideshow_small
+    //     display: block
 
 
         
