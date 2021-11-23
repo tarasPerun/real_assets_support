@@ -348,6 +348,7 @@
                     transform: translateY(-50%)
                     width: 26px
                     height: 12px
+                    z-index: 2
                     span
                         display: block
                         height: 2px
@@ -364,6 +365,20 @@
                                 display: none
                             &:nth-child(3)
                                 transform: translateY(3px) rotate(45deg)
+                .ellipse
+                    position: absolute
+                    width: 45px
+                    height: 45px
+                    right: 44px
+                    top: 28px
+                    background: rgba(100, 100, 100, 0.01)
+                    border: 5px solid #D6B46F
+                    box-sizing: border-box
+                    filter: blur(2px)
+                    border-radius: 50%
+                    z-index: 1
+                    margin-right: -3px
+
         .main_line
             display: none
 
@@ -531,9 +546,11 @@
         &_text
             font-size: 16px
             line-height: 19px
-.impressum
-    font-size: 18px 
-    bottom: 20px 
+    .impressum
+        font-size: 18px 
+        bottom: 20px 
+        left: 50%
+        transform: translateX(-40%)
               
             
 @media (max-width: 575px)
@@ -552,13 +569,10 @@
                     &_link
                         font-size: 16px
                 .hamburger
-                    display: block
-                    position: absolute
+                   
+                    top: 33px
                     right: 40px
-                    top: 30px
-                    transform: translateY(-50%)
-                    width: 26px
-                    height: 12px
+                   
                     span
                         display: block
                         height: 2px
@@ -575,15 +589,12 @@
                                 display: none
                             &:nth-child(3)
                                 transform: translateY(3px) rotate(45deg)
-    
-    // .slideshow
-    //     display: none
 
-    // .slideshow_small
-    //     display: block
-
-
-        
+                .ellipse
+                    width: 45px
+                    height: 45px
+                    right: 34px
+                    top: 11px
     .weiterlesen
         &_container
             min-height: 1000px
@@ -658,4 +669,31 @@
             width: 100%
             margin-top: 10px
             margin-left: 75px
-          
+    .footer
+        &_wrapper 
+            &_item 
+                text-align: center
+                &_1
+                    width: 220px
+                &_2
+                    margin: 0
+                    
+                &_3
+                   margin: 0 
+                &_4
+                &_5
+                    margin-left: -9px
+                    margin: 0 auto
+                    width: 220px
+        &_menu
+            flex-direction: column
+
+
+        &_subtitle
+            font-size: 22px
+        &_text
+            font-size: 14px
+            line-height: 19px
+    .impressum
+       
+        font-size: 16px
